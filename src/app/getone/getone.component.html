@@ -1,0 +1,5 @@
+<form #myFrom="ngForm" (submit)="doesIt(myFrom.value)">
+    <input type="text" name="name" [ngModel] [value]="Data.name">
+    <input type="text" name="avatar" [ngModel] [value]="Data.avatar">
+    <input type="submit">
+</form>

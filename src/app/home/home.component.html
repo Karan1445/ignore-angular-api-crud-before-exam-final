@@ -1,0 +1,7 @@
+<button routerLink="add">Post</button>
+<div *ngFor="let i of Datas">
+    <img [src]="i.avatar">
+    <h1>{{i.name}}</h1>
+    <button (click)="deletes(i.id)">Delete</button>
+    <button routerLink="/add/{{i.id}}">More More</button>
+</div>
